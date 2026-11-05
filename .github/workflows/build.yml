@@ -11,6 +11,6 @@ jobs:
       - name: Verificações do núcleo (sem Minecraft)
         run: ./tools/run_checks.sh
       - name: Build do mod
-        run: gradle build --no-daemon
+        run: ./gradlew build --no-daemon
       - uses: actions/upload-artifact@v4
         with: { name: verden-world-jar, path: build/libs/*.jar }
