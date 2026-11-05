@@ -1,0 +1,4 @@
+# id|x|z|rx|rz|nivel_agua
+lago_ged|-116000|73200|8000|7600|73
+lago_ois|83200|-141200|10400|5200|90
+intersecao_rios|0|-400|4800|8400|74

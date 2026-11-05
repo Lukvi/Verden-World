@@ -1,0 +1,916 @@
+{
+ "_comment": "Regiões naturais autorais, desenhadas sobre reference/mapa_colorido.jpg (pixels). Nada aqui é canon além do que os mapas/livros/Guia sustentam; contornos são aproximações visuais e podem ser refinados. 'biome' usa os nomes de data/biomes.csv.",
+ "polygons": [
+  {
+   "id": "koold_montanhas",
+   "biome": "MOUNTAIN",
+   "mountain": 1.0,
+   "note": "Cordilheira de Koold/Andens Spids/Montainezz",
+   "poly": [
+    [
+     372,
+     150
+    ],
+    [
+     395,
+     70
+    ],
+    [
+     455,
+     10
+    ],
+    [
+     470,
+     0
+    ],
+    [
+     790,
+     0
+    ],
+    [
+     792,
+     95
+    ],
+    [
+     700,
+     135
+    ],
+    [
+     610,
+     170
+    ],
+    [
+     520,
+     195
+    ],
+    [
+     430,
+     212
+    ]
+   ]
+  },
+  {
+   "id": "koold_glaciar",
+   "biome": "ICE_SPIKES",
+   "note": "Deserto de gelo / geleiras de Koold (interior frio, a leste das montanhas)",
+   "poly": [
+    [
+     800,
+     40
+    ],
+    [
+     900,
+     35
+    ],
+    [
+     975,
+     75
+    ],
+    [
+     985,
+     130
+    ],
+    [
+     930,
+     170
+    ],
+    [
+     850,
+     150
+    ],
+    [
+     810,
+     100
+    ]
+   ]
+  },
+  {
+   "id": "veroogh_vale",
+   "biome": "SNOW_TAIGA",
+   "note": "Vale protegido por montanhas de picos brancos onde fica Veroogh (Prelúdio cap. Veroogh)",
+   "poly": [
+    [
+     565,
+     205
+    ],
+    [
+     640,
+     185
+    ],
+    [
+     722,
+     205
+    ],
+    [
+     732,
+     262
+    ],
+    [
+     662,
+     286
+    ],
+    [
+     580,
+     268
+    ]
+   ]
+  },
+  {
+   "id": "floresta_morke",
+   "biome": "FOREST_MORKE",
+   "rough": 16,
+   "poly": [
+    [
+     505,
+     440
+    ],
+    [
+     570,
+     420
+    ],
+    [
+     650,
+     425
+    ],
+    [
+     712,
+     470
+    ],
+    [
+     708,
+     522
+    ],
+    [
+     640,
+     532
+    ],
+    [
+     560,
+     522
+    ],
+    [
+     500,
+     500
+    ]
+   ]
+  },
+  {
+   "id": "floresta_kartoffel",
+   "biome": "FOREST_KARTOFFEL",
+   "rough": 12,
+   "poly": [
+    [
+     650,
+     300
+    ],
+    [
+     700,
+     270
+    ],
+    [
+     772,
+     275
+    ],
+    [
+     792,
+     332
+    ],
+    [
+     762,
+     385
+    ],
+    [
+     690,
+     382
+    ],
+    [
+     660,
+     340
+    ]
+   ]
+  },
+  {
+   "id": "floresta_brottus",
+   "biome": "FOREST_BROTTUS",
+   "rough": 10,
+   "poly": [
+    [
+     430,
+     285
+    ],
+    [
+     470,
+     255
+    ],
+    [
+     540,
+     250
+    ],
+    [
+     572,
+     282
+    ],
+    [
+     562,
+     326
+    ],
+    [
+     490,
+     342
+    ],
+    [
+     430,
+     330
+    ]
+   ]
+  },
+  {
+   "id": "floresta_verlaaf",
+   "biome": "FOREST_VERLAAF",
+   "rough": 9,
+   "note": "Guia: Pântano Verlaaf reclassificado para floresta",
+   "poly": [
+    [
+     450,
+     378
+    ],
+    [
+     560,
+     352
+    ],
+    [
+     682,
+     362
+    ],
+    [
+     702,
+     412
+    ],
+    [
+     640,
+     432
+    ],
+    [
+     520,
+     442
+    ],
+    [
+     460,
+     420
+    ]
+   ]
+  },
+  {
+   "id": "floresta_gron",
+   "biome": "FOREST_GRON",
+   "rough": 14,
+   "poly": [
+    [
+     280,
+     585
+    ],
+    [
+     330,
+     555
+    ],
+    [
+     420,
+     560
+    ],
+    [
+     442,
+     600
+    ],
+    [
+     420,
+     626
+    ],
+    [
+     330,
+     630
+    ],
+    [
+     285,
+     616
+    ]
+   ]
+  },
+  {
+   "id": "pantano_palusfor",
+   "biome": "SWAMP",
+   "poly": [
+    [
+     330,
+     250
+    ],
+    [
+     380,
+     225
+    ],
+    [
+     446,
+     235
+    ],
+    [
+     452,
+     290
+    ],
+    [
+     402,
+     312
+    ],
+    [
+     345,
+     302
+    ]
+   ]
+  },
+  {
+   "id": "pantano_kapenge",
+   "biome": "SWAMP",
+   "poly": [
+    [
+     500,
+     556
+    ],
+    [
+     560,
+     540
+    ],
+    [
+     680,
+     545
+    ],
+    [
+     742,
+     560
+    ],
+    [
+     746,
+     602
+    ],
+    [
+     660,
+     612
+    ],
+    [
+     540,
+     606
+    ],
+    [
+     495,
+     590
+    ]
+   ]
+  },
+  {
+   "id": "pantano_nadder",
+   "biome": "MANGROVE",
+   "note": "Guia: abaixo da Floresta Gron, no antigo lugar dos Campos Verderinos",
+   "poly": [
+    [
+     255,
+     642
+    ],
+    [
+     330,
+     638
+    ],
+    [
+     420,
+     648
+    ],
+    [
+     426,
+     684
+    ],
+    [
+     340,
+     692
+    ],
+    [
+     265,
+     688
+    ]
+   ]
+  },
+  {
+   "id": "campos_sussurrantes",
+   "biome": "MEADOW",
+   "poly": [
+    [
+     405,
+     520
+    ],
+    [
+     470,
+     515
+    ],
+    [
+     545,
+     535
+    ],
+    [
+     560,
+     560
+    ],
+    [
+     500,
+     600
+    ],
+    [
+     420,
+     605
+    ],
+    [
+     395,
+     570
+    ]
+   ]
+  },
+  {
+   "id": "campos_verderinos",
+   "biome": "MEADOW",
+   "note": "Guia: passam a ocupar o antigo lugar de Jord",
+   "poly": [
+    [
+     535,
+     610
+    ],
+    [
+     640,
+     605
+    ],
+    [
+     690,
+     640
+    ],
+    [
+     650,
+     690
+    ],
+    [
+     560,
+     690
+    ],
+    [
+     525,
+     655
+    ]
+   ]
+  },
+  {
+   "id": "campos_malditos",
+   "biome": "PLAINS",
+   "poly": [
+    [
+     790,
+     410
+    ],
+    [
+     880,
+     405
+    ],
+    [
+     900,
+     440
+    ],
+    [
+     850,
+     455
+    ],
+    [
+     795,
+     445
+    ]
+   ]
+  },
+  {
+   "id": "yettus_minas",
+   "biome": "BADLANDS",
+   "rough": 38,
+   "note": "Rochas sedimentares e áreas de mineração",
+   "poly": [
+    [
+     835,
+     625
+    ],
+    [
+     910,
+     610
+    ],
+    [
+     945,
+     650
+    ],
+    [
+     925,
+     690
+    ],
+    [
+     860,
+     695
+    ],
+    [
+     828,
+     660
+    ]
+   ]
+  },
+  {
+   "id": "karamarraw_selva",
+   "biome": "JUNGLE",
+   "rough": 28,
+   "note": "Ilha tropical de vegetação densa e montanhas imponentes (Prelúdio)",
+   "poly": [
+    [
+     270,
+     840
+    ],
+    [
+     1100,
+     820
+    ],
+    [
+     1100,
+     935
+    ],
+    [
+     270,
+     935
+    ]
+   ]
+  },
+  {
+   "id": "karamarraw_serra",
+   "biome": "JUNGLE",
+   "highland": 1.0,
+   "poly": [
+    [
+     400,
+     860
+    ],
+    [
+     560,
+     850
+    ],
+    [
+     800,
+     860
+    ],
+    [
+     980,
+     850
+    ],
+    [
+     1040,
+     880
+    ],
+    [
+     900,
+     915
+    ],
+    [
+     600,
+     915
+    ],
+    [
+     430,
+     905
+    ]
+   ]
+  },
+  {
+   "id": "motry_taiga",
+   "biome": "TAIGA",
+   "poly": [
+    [
+     55,
+     845
+    ],
+    [
+     135,
+     835
+    ],
+    [
+     150,
+     900
+    ],
+    [
+     75,
+     915
+    ]
+   ]
+  }
+ ],
+ "lakes": [
+  {
+   "id": "lago_ged",
+   "center": [
+    452,
+    686
+   ],
+   "rx": 20,
+   "ry": 19,
+   "note": "Lago Ged"
+  },
+  {
+   "id": "lago_ois",
+   "center": [
+    950,
+    150
+   ],
+   "rx": 26,
+   "ry": 13,
+   "note": "Lago Ois (congelado)"
+  },
+  {
+   "id": "intersecao_rios",
+   "center": [
+    742,
+    502
+   ],
+   "rx": 12,
+   "ry": 21,
+   "note": "Interseção dos Rios: grande lago onde os rios se cruzam"
+  }
+ ],
+ "rivers": [
+  {
+   "id": "mak",
+   "name": "Rio Mak",
+   "status": "HIPOTESE",
+   "width": 42,
+   "note": "Norte da Interseção (placa do livro: Mak ao Norte). Nascente nas encostas de Veroogh: traçado superior inferido.",
+   "pts": [
+    [
+     612,
+     176
+    ],
+    [
+     626,
+     236
+    ],
+    [
+     662,
+     276
+    ],
+    [
+     700,
+     322
+    ],
+    [
+     716,
+     362
+    ],
+    [
+     722,
+     396
+    ],
+    [
+     732,
+     440
+    ],
+    [
+     740,
+     482
+    ]
+   ]
+  },
+  {
+   "id": "udrio",
+   "name": "Rio Údrio",
+   "status": "MAPA",
+   "width": 32,
+   "note": "Faixa diagonal visível no mapa, atravessando a Floresta Morke.",
+   "pts": [
+    [
+     586,
+     406
+    ],
+    [
+     615,
+     426
+    ],
+    [
+     650,
+     452
+    ],
+    [
+     690,
+     476
+    ],
+    [
+     725,
+     494
+    ],
+    [
+     740,
+     498
+    ]
+   ]
+  },
+  {
+   "id": "kejne",
+   "name": "Rio Kejne",
+   "status": "CANON",
+   "width": 60,
+   "note": "Leste da Interseção; abastece Flerin (Prelúdio cap. 8).",
+   "pts": [
+    [
+     752,
+     508
+    ],
+    [
+     795,
+     520
+    ],
+    [
+     852,
+     540
+    ],
+    [
+     922,
+     562
+    ],
+    [
+     1000,
+     588
+    ],
+    [
+     1062,
+     632
+    ],
+    [
+     1106,
+     666
+    ]
+   ]
+  },
+  {
+   "id": "synor",
+   "name": "Rio Synor",
+   "status": "GUIA",
+   "width": 46,
+   "note": "Sul da Interseção. Mapa antigo: Rio Maariz; Guia: Synor; Prelúdio: 'Marin ao Sul' (hipótese: mesmo rio).",
+   "pts": [
+    [
+     742,
+     522
+    ],
+    [
+     745,
+     560
+    ],
+    [
+     740,
+     596
+    ],
+    [
+     728,
+     640
+    ],
+    [
+     716,
+     684
+    ],
+    [
+     722,
+     730
+    ],
+    [
+     736,
+     768
+    ],
+    [
+     742,
+     780
+    ]
+   ]
+  },
+  {
+   "id": "real",
+   "name": "Rio Real",
+   "status": "MAPA",
+   "width": 50,
+   "note": "Trecho comum às duas leituras: da Interseção a oeste até a bifurcação.",
+   "pts": [
+    [
+     732,
+     512
+    ],
+    [
+     705,
+     533
+    ],
+    [
+     660,
+     537
+    ],
+    [
+     610,
+     533
+    ],
+    [
+     560,
+     528
+    ],
+    [
+     555,
+     535
+    ]
+   ]
+  },
+  {
+   "id": "real_oeste",
+   "name": "Rio Real (trecho oeste)",
+   "status": "PENDENTE",
+   "width": 44,
+   "note": "PENDENTE: a faixa continua a oeste até a costa junto a Nagdaar (rótulo 'Rio Real' do mapa). Não confirmado.",
+   "pts": [
+    [
+     555,
+     535
+    ],
+    [
+     525,
+     512
+    ],
+    [
+     490,
+     502
+    ],
+    [
+     455,
+     486
+    ],
+    [
+     400,
+     488
+    ],
+    [
+     360,
+     486
+    ],
+    [
+     334,
+     484
+    ]
+   ]
+  },
+  {
+   "id": "real_dash",
+   "name": "Rio Dash (elo superior)",
+   "status": "PENDENTE",
+   "width": 38,
+   "note": "PENDENTE: a leitura do livro ('seguir o Real leva ao Kapenge') pode indicar que o Real desce até o Kapenge e vira Dash.",
+   "pts": [
+    [
+     555,
+     535
+    ],
+    [
+     532,
+     560
+    ],
+    [
+     518,
+     592
+    ],
+    [
+     512,
+     616
+    ]
+   ]
+  },
+  {
+   "id": "dash",
+   "name": "Rio Dash",
+   "status": "MAPA",
+   "width": 40,
+   "note": "Faixa vertical a oeste de Jord; desemboca na costa sul.",
+   "pts": [
+    [
+     512,
+     616
+    ],
+    [
+     512,
+     660
+    ],
+    [
+     514,
+     706
+    ],
+    [
+     508,
+     748
+    ],
+    [
+     503,
+     784
+    ]
+   ]
+  }
+ ]
+}

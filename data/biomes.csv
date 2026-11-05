@@ -1,0 +1,20 @@
+id,name,mc_biome,top,filler,desc
+0,OCEAN,minecraft:ocean,minecraft:sand,minecraft:sand,mar
+1,PLAINS,minecraft:plains,minecraft:grass_block,minecraft:dirt,planície
+2,MEADOW,minecraft:meadow,minecraft:grass_block,minecraft:dirt,campos
+3,FOREST_BROTTUS,minecraft:forest,minecraft:grass_block,minecraft:dirt,Floresta Brottus
+4,FOREST_MORKE,minecraft:dark_forest,minecraft:grass_block,minecraft:dirt,Floresta Morke
+5,FOREST_GRON,minecraft:old_growth_birch_forest,minecraft:grass_block,minecraft:dirt,Floresta Gron
+6,FOREST_KARTOFFEL,minecraft:taiga,minecraft:grass_block,minecraft:dirt,Floresta Kartoffel
+7,FOREST_VERLAAF,minecraft:birch_forest,minecraft:grass_block,minecraft:dirt,Floresta Verlaaf
+8,SWAMP,minecraft:swamp,minecraft:grass_block,minecraft:dirt,pântano
+9,MANGROVE,minecraft:mangrove_swamp,minecraft:mud,minecraft:mud,Pântano Nadder
+10,DESERT,minecraft:desert,minecraft:sand,minecraft:sandstone,Deserto Yettus
+11,BADLANDS,minecraft:badlands,minecraft:red_sand,minecraft:terracotta,rochas sedimentares / minas
+12,SNOW_PLAINS,minecraft:snowy_plains,minecraft:grass_block,minecraft:dirt,tundra
+13,SNOW_TAIGA,minecraft:snowy_taiga,minecraft:grass_block,minecraft:dirt,taiga nevada
+14,MOUNTAIN,minecraft:snowy_slopes,minecraft:stone,minecraft:stone,montanhas (resolvido por altura)
+15,JUNGLE,minecraft:jungle,minecraft:grass_block,minecraft:dirt,Karamarraw
+16,SPARSE_JUNGLE,minecraft:sparse_jungle,minecraft:grass_block,minecraft:dirt,borda tropical
+17,TAIGA,minecraft:taiga,minecraft:grass_block,minecraft:dirt,transição fria
+18,ICE_SPIKES,minecraft:ice_spikes,minecraft:snow_block,minecraft:snow_block,geleiras de Koold

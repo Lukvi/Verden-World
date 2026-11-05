@@ -1,0 +1,773 @@
+{
+ "meta": {
+  "scale_blocks_per_px": 400,
+  "origin_px": [
+   742,
+   503
+  ],
+  "origin_note": "Origem (0,0) = centro do lago da Interseção dos Rios no mapa colorido (742,503). X leste, Z sul. 1 bloco = 1 m.",
+  "px_note": "px_color = pixel em reference/mapa_colorido.jpg (1365x1024).",
+  "status": {
+   "CANON": "nome e lugar sustentados por mapa e/ou livro",
+   "MAPA": "só nos mapas (sem lore)",
+   "TEXTO": "só nos livros; posição provisória",
+   "GUIA": "definido/alterado pelo Guia de Cartografia",
+   "GUIA-POS?": "existe no Guia sem posição precisa; posição provisória"
+  }
+ },
+ "locations": [
+  {
+   "id": "jord",
+   "name": "Jord",
+   "kind": "capital",
+   "region": "Jord (Sul)",
+   "px_color": [
+    620,
+    752
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 2500,
+    "blend": 1500
+   }
+  },
+  {
+   "id": "nagdaar",
+   "name": "Nagdaar",
+   "kind": "capital",
+   "region": "Nagdaar (Oeste)",
+   "px_color": [
+    378,
+    395
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 2500,
+    "blend": 1500
+   }
+  },
+  {
+   "id": "flerin",
+   "name": "Flerin",
+   "kind": "capital",
+   "region": "Flerin (Leste)",
+   "px_color": [
+    970,
+    538
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 2500,
+    "blend": 1500
+   }
+  },
+  {
+   "id": "veroogh",
+   "name": "Veroogh",
+   "kind": "capital",
+   "region": "Veroogh (Norte)",
+   "px_color": [
+    640,
+    215
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 2500,
+    "blend": 1500
+   }
+  },
+  {
+   "id": "montainezz",
+   "name": "Montainezz",
+   "kind": "cidade-montanha",
+   "region": "Veroogh (Norte)",
+   "px_color": [
+    430,
+    135
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 600,
+    "blend": 600
+   }
+  },
+  {
+   "id": "geerd",
+   "name": "Geerd",
+   "kind": "vila",
+   "region": "Veroogh (Norte)",
+   "px_color": [
+    483,
+    245
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 350,
+    "blend": 400
+   }
+  },
+  {
+   "id": "hyjnottir",
+   "name": "Hyjnottir",
+   "kind": "vila",
+   "region": "Nagdaar (Oeste)",
+   "px_color": [
+    360,
+    330
+   ],
+   "status": "GUIA",
+   "flatten": {
+    "radius": 350,
+    "blend": 400
+   }
+  },
+  {
+   "id": "hejury",
+   "name": "Hejury",
+   "kind": "vila",
+   "region": "Nagdaar (Oeste)",
+   "px_color": [
+    388,
+    520
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 350,
+    "blend": 400
+   }
+  },
+  {
+   "id": "okse",
+   "name": "Okse",
+   "kind": "vila-porto",
+   "region": "Jord (Sul)",
+   "px_color": [
+    352,
+    695
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 500,
+    "blend": 500
+   }
+  },
+  {
+   "id": "suttbahr",
+   "name": "Suttbahr",
+   "kind": "vila",
+   "region": "Veroogh/Flerin",
+   "px_color": [
+    780,
+    310
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 350,
+    "blend": 400
+   }
+  },
+  {
+   "id": "verfaeg",
+   "name": "Verfaeg",
+   "kind": "vila",
+   "region": "Flerin (Leste)",
+   "px_color": [
+    805,
+    475
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 350,
+    "blend": 400
+   }
+  },
+  {
+   "id": "villaes",
+   "name": "Villaes",
+   "kind": "vila",
+   "region": "Flerin (Leste)",
+   "px_color": [
+    940,
+    460
+   ],
+   "status": "GUIA",
+   "flatten": {
+    "radius": 350,
+    "blend": 400
+   }
+  },
+  {
+   "id": "rodi",
+   "name": "Rodi",
+   "kind": "vila",
+   "region": "Yettus/Flerin",
+   "px_color": [
+    775,
+    595
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 350,
+    "blend": 400
+   }
+  },
+  {
+   "id": "hjam",
+   "name": "Hjam",
+   "kind": "vila",
+   "region": "Yettus/Flerin",
+   "px_color": [
+    785,
+    685
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 350,
+    "blend": 400
+   }
+  },
+  {
+   "id": "juttok",
+   "name": "Juttok",
+   "kind": "ilha-vila",
+   "region": "Veroogh (Norte)",
+   "px_color": [
+    905,
+    350
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 300,
+    "blend": 300
+   }
+  },
+  {
+   "id": "oerr",
+   "name": "Oerr",
+   "kind": "vila",
+   "region": "Koold",
+   "px_color": [
+    985,
+    205
+   ],
+   "status": "MAPA",
+   "flatten": {
+    "radius": 350,
+    "blend": 400
+   }
+  },
+  {
+   "id": "cambehy",
+   "name": "Cambehy",
+   "kind": "reservas",
+   "region": "Koold",
+   "px_color": [
+    880,
+    55
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 200,
+    "blend": 200
+   }
+  },
+  {
+   "id": "torre_merlim",
+   "name": "Torre de Merlim",
+   "kind": "torre",
+   "region": "Koold",
+   "px_color": [
+    690,
+    145
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 120,
+    "blend": 200
+   }
+  },
+  {
+   "id": "muzaloth",
+   "name": "Muzaloth",
+   "kind": "fortaleza-torre",
+   "region": "Koold",
+   "px_color": [
+    760,
+    120
+   ],
+   "status": "TEXTO",
+   "flatten": {
+    "radius": 250,
+    "blend": 250
+   }
+  },
+  {
+   "id": "minas_yettus",
+   "name": "Minas de Yettus",
+   "kind": "minas",
+   "region": "Yettus/Flerin",
+   "px_color": [
+    880,
+    640
+   ],
+   "status": "TEXTO",
+   "flatten": {
+    "radius": 300,
+    "blend": 300
+   }
+  },
+  {
+   "id": "maariz",
+   "name": "Maariz",
+   "kind": "ilha-porto (piratas)",
+   "region": "Maariz",
+   "px_color": [
+    1285,
+    420
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 1200,
+    "blend": 800
+   }
+  },
+  {
+   "id": "karamarraw",
+   "name": "Karamarraw",
+   "kind": "ilha amaldiçoada",
+   "region": "Karamarraw",
+   "px_color": [
+    690,
+    925
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "templo_casthiel",
+   "name": "Templo Casthiel",
+   "kind": "templo-ilha",
+   "region": "Mar Venstre",
+   "px_color": [
+    125,
+    555
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 150,
+    "blend": 150
+   }
+  },
+  {
+   "id": "xasof",
+   "name": "Xasof",
+   "kind": "ilha (duendes)",
+   "region": "Mar Venstre",
+   "px_color": [
+    110,
+    370
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "barvyl",
+   "name": "Barvyl",
+   "kind": "ilha",
+   "region": "Mar Venstre",
+   "px_color": [
+    75,
+    495
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "lolity",
+   "name": "Lolity",
+   "kind": "ilha",
+   "region": "Mar Hojre",
+   "px_color": [
+    1310,
+    205
+   ],
+   "status": "GUIA-POS?",
+   "pending": "Posição provisória (ilha nordeste do Mar Hojre); pendente de confirmação."
+  },
+  {
+   "id": "aslogy",
+   "name": "Aslogy",
+   "kind": "ilha",
+   "region": "Mar Venstre",
+   "px_color": [
+    265,
+    135
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "motry",
+   "name": "Motry (Ilha Presídio)",
+   "kind": "ilha-presídio",
+   "region": "Mar Venstre",
+   "px_color": [
+    105,
+    870
+   ],
+   "status": "GUIA",
+   "flatten": {
+    "radius": 400,
+    "blend": 300
+   }
+  },
+  {
+   "id": "chronyth",
+   "name": "Arena Chronyth",
+   "kind": "ilha-arena",
+   "region": "Mar Hojre",
+   "px_color": [
+    1115,
+    265
+   ],
+   "status": "GUIA",
+   "flatten": {
+    "radius": 400,
+    "blend": 300
+   }
+  },
+  {
+   "id": "ost_sirener",
+   "name": "Ost Sirener",
+   "kind": "ilha-cidade",
+   "region": "Mar Hojre",
+   "px_color": [
+    1160,
+    105
+   ],
+   "status": "MAPA",
+   "flatten": {
+    "radius": 900,
+    "blend": 600
+   }
+  },
+  {
+   "id": "runes",
+   "name": "Runes",
+   "kind": "ilha",
+   "region": "Mar Hojre",
+   "px_color": [
+    1300,
+    595
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "belins",
+   "name": "Belins",
+   "kind": "ilha",
+   "region": "Mar Hojre",
+   "px_color": [
+    1275,
+    740
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "grandeza",
+   "name": "Grandeza",
+   "kind": "vila-militar",
+   "region": "Jord (Sul)",
+   "px_color": [
+    655,
+    732
+   ],
+   "status": "GUIA-POS?",
+   "flatten": {
+    "radius": 500,
+    "blend": 400
+   }
+  },
+  {
+   "id": "pilares_maariz",
+   "name": "Pilares de pedra e corais",
+   "kind": "acidente-marítimo",
+   "region": "Mar Hojre",
+   "px_color": [
+    1270,
+    515
+   ],
+   "status": "GUIA-POS?"
+  },
+  {
+   "id": "muros_terror",
+   "name": "Muros de Terror (fortaleza)",
+   "kind": "fortaleza",
+   "region": "Nagdaar (Oeste)",
+   "px_color": [
+    378,
+    398
+   ],
+   "status": "CANON",
+   "flatten": {
+    "radius": 600,
+    "blend": 500
+   }
+  },
+  {
+   "id": "floresta_brottus",
+   "name": "Floresta Brottus",
+   "kind": "floresta",
+   "region": "Nagdaar (Oeste)",
+   "px_color": [
+    440,
+    335
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "floresta_morke",
+   "name": "Floresta Morke",
+   "kind": "floresta",
+   "region": "Centro",
+   "px_color": [
+    575,
+    490
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "floresta_gron",
+   "name": "Floresta Gron",
+   "kind": "floresta",
+   "region": "Nagdaar/Jord",
+   "px_color": [
+    350,
+    625
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "floresta_kartoffel",
+   "name": "Floresta Kartoffel",
+   "kind": "floresta",
+   "region": "Veroogh/Flerin",
+   "px_color": [
+    735,
+    365
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "floresta_verlaaf",
+   "name": "Floresta Verlaaf",
+   "kind": "floresta",
+   "region": "Centro-Norte",
+   "px_color": [
+    580,
+    395
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "pantano_kapenge",
+   "name": "Pântano de Kapenge",
+   "kind": "pântano",
+   "region": "Centro-Sul",
+   "px_color": [
+    610,
+    590
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "pantano_palusfor",
+   "name": "Pântano Palusfor",
+   "kind": "pântano",
+   "region": "Nagdaar (NO)",
+   "px_color": [
+    340,
+    255
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "pantano_nadder",
+   "name": "Pântano Nadder",
+   "kind": "pântano",
+   "region": "Jord (Sul)",
+   "px_color": [
+    330,
+    665
+   ],
+   "status": "GUIA"
+  },
+  {
+   "id": "deserto_yettus",
+   "name": "Deserto Yettus",
+   "kind": "deserto",
+   "region": "Yettus/Flerin",
+   "px_color": [
+    900,
+    690
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "koold",
+   "name": "Koold",
+   "kind": "tundra-geleira",
+   "region": "Koold",
+   "px_color": [
+    880,
+    90
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "lago_ged",
+   "name": "Lago Ged",
+   "kind": "lago",
+   "region": "Jord (Sul)",
+   "px_color": [
+    455,
+    683
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "lago_ois",
+   "name": "Lago Ois",
+   "kind": "lago",
+   "region": "Koold",
+   "px_color": [
+    950,
+    148
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "intersecao_rios",
+   "name": "Interseção dos Rios",
+   "kind": "lago/confluência",
+   "region": "Centro",
+   "px_color": [
+    742,
+    503
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "campos_malditos",
+   "name": "Campos Malditos",
+   "kind": "campos",
+   "region": "Veroogh/Flerin",
+   "px_color": [
+    800,
+    425
+   ],
+   "status": "CANON"
+  },
+  {
+   "id": "campos_sussurrantes",
+   "name": "Campos Sussurrantes",
+   "kind": "campos",
+   "region": "Centro",
+   "px_color": [
+    470,
+    570
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "campos_verderinos",
+   "name": "Campos Verderinos",
+   "kind": "campos",
+   "region": "Jord (Sul)",
+   "px_color": [
+    585,
+    640
+   ],
+   "status": "GUIA"
+  },
+  {
+   "id": "caverna_gelada",
+   "name": "Caverna Gelada",
+   "kind": "caverna",
+   "region": "Koold",
+   "px_color": [
+    790,
+    190
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "caverna_orme",
+   "name": "Caverna Órme",
+   "kind": "caverna",
+   "region": "Centro",
+   "px_color": [
+    480,
+    462
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "caverna_fulys",
+   "name": "Caverna Fulys",
+   "kind": "caverna",
+   "region": "Mar Venstre",
+   "px_color": [
+    100,
+    632
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "caverna_frajorn",
+   "name": "Caverna Frajorn",
+   "kind": "caverna",
+   "region": "Mar Venstre",
+   "px_color": [
+    150,
+    105
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "andens_spids",
+   "name": "Andens Spids",
+   "kind": "cordilheira",
+   "region": "Koold",
+   "px_color": [
+    480,
+    20
+   ],
+   "status": "MAPA"
+  },
+  {
+   "id": "porto_jord",
+   "name": "Porto de Jord",
+   "kind": "vila-porto",
+   "region": "Jord (Sul)",
+   "px_color": [
+    620,
+    776
+   ],
+   "status": "TEXTO",
+   "note": "Citado em verden.txt (\"grandes construções do Porto de Jørd\"); posição na costa ao sul da capital é inferida.",
+   "flatten": {
+    "radius": 500,
+    "blend": 500
+   }
+  },
+  {
+   "id": "ilha_frajorn",
+   "name": "Ilha da Caverna Frajorn (nome pendente)",
+   "kind": "ilha",
+   "region": "Mar Venstre",
+   "px_color": [
+    118,
+    94
+   ],
+   "status": "MAPA",
+   "pending": "A ilha noroeste era rotulada Lolity no mapa antigo; o Guia move Lolity para o Mar Hojre. Nome desta ilha pendente."
+  }
+ ]
+}

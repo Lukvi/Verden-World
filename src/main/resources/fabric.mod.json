@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "verden_world",
+  "version": "${version}",
+  "name": "Verden-World",
+  "description": "O continente de Verden em escala 1:1 para Minecraft. Projeto independente.",
+  "authors": ["Lukvi"],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": { "main": ["io.github.lukvi.verdenworld.VerdenWorldMod"] },
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "~1.21.1", "java": ">=21", "fabric-api": "*" }
+}

@@ -1,0 +1,59 @@
+# id|nome|tipo|regiao|x|z|flatten_raio|flatten_blend|status|pendente
+jord|Jord|capital|Jord (Sul)|-48800|99600|2500|1500|CANON|0
+nagdaar|Nagdaar|capital|Nagdaar (Oeste)|-145600|-43200|2500|1500|CANON|0
+flerin|Flerin|capital|Flerin (Leste)|91200|14000|2500|1500|CANON|0
+veroogh|Veroogh|capital|Veroogh (Norte)|-40800|-115200|2500|1500|CANON|0
+montainezz|Montainezz|cidade-montanha|Veroogh (Norte)|-124800|-147200|600|600|CANON|0
+geerd|Geerd|vila|Veroogh (Norte)|-103600|-103200|350|400|CANON|0
+hyjnottir|Hyjnottir|vila|Nagdaar (Oeste)|-152800|-69200|350|400|GUIA|0
+hejury|Hejury|vila|Nagdaar (Oeste)|-141600|6800|350|400|CANON|0
+okse|Okse|vila-porto|Jord (Sul)|-156000|76800|500|500|CANON|0
+suttbahr|Suttbahr|vila|Veroogh/Flerin|15200|-77200|350|400|CANON|0
+verfaeg|Verfaeg|vila|Flerin (Leste)|25200|-11200|350|400|CANON|0
+villaes|Villaes|vila|Flerin (Leste)|79200|-17200|350|400|GUIA|0
+rodi|Rodi|vila|Yettus/Flerin|13200|36800|350|400|CANON|0
+hjam|Hjam|vila|Yettus/Flerin|17200|72800|350|400|CANON|0
+juttok|Juttok|ilha-vila|Veroogh (Norte)|65200|-61200|300|300|CANON|0
+oerr|Oerr|vila|Koold|97200|-119200|350|400|MAPA|0
+cambehy|Cambehy|reservas|Koold|55200|-179200|200|200|CANON|0
+torre_merlim|Torre de Merlim|torre|Koold|-20800|-143200|120|200|CANON|0
+muzaloth|Muzaloth|fortaleza-torre|Koold|7200|-153200|250|250|TEXTO|0
+minas_yettus|Minas de Yettus|minas|Yettus/Flerin|55200|54800|300|300|TEXTO|0
+maariz|Maariz|ilha-porto (piratas)|Maariz|217200|-33200|1200|800|CANON|0
+karamarraw|Karamarraw|ilha amaldiçoada|Karamarraw|-20800|168800|0|0|CANON|0
+templo_casthiel|Templo Casthiel|templo-ilha|Mar Venstre|-246800|20800|150|150|CANON|0
+xasof|Xasof|ilha (duendes)|Mar Venstre|-252800|-53200|0|0|CANON|0
+barvyl|Barvyl|ilha|Mar Venstre|-266800|-3200|0|0|MAPA|0
+lolity|Lolity|ilha|Mar Hojre|227200|-119200|0|0|GUIA-POS?|1
+aslogy|Aslogy|ilha|Mar Venstre|-190800|-147200|0|0|MAPA|0
+motry|Motry (Ilha Presídio)|ilha-presídio|Mar Venstre|-254800|146800|400|300|GUIA|0
+chronyth|Arena Chronyth|ilha-arena|Mar Hojre|149200|-95200|400|300|GUIA|0
+ost_sirener|Ost Sirener|ilha-cidade|Mar Hojre|167200|-159200|900|600|MAPA|0
+runes|Runes|ilha|Mar Hojre|223200|36800|0|0|MAPA|0
+belins|Belins|ilha|Mar Hojre|213200|94800|0|0|MAPA|0
+grandeza|Grandeza|vila-militar|Jord (Sul)|-34800|91600|500|400|GUIA-POS?|0
+pilares_maariz|Pilares de pedra e corais|acidente-marítimo|Mar Hojre|211200|4800|0|0|GUIA-POS?|0
+muros_terror|Muros de Terror (fortaleza)|fortaleza|Nagdaar (Oeste)|-145600|-42000|600|500|CANON|0
+floresta_brottus|Floresta Brottus|floresta|Nagdaar (Oeste)|-120800|-67200|0|0|CANON|0
+floresta_morke|Floresta Morke|floresta|Centro|-66800|-5200|0|0|CANON|0
+floresta_gron|Floresta Gron|floresta|Nagdaar/Jord|-156800|48800|0|0|CANON|0
+floresta_kartoffel|Floresta Kartoffel|floresta|Veroogh/Flerin|-2800|-55200|0|0|CANON|0
+floresta_verlaaf|Floresta Verlaaf|floresta|Centro-Norte|-64800|-43200|0|0|CANON|0
+pantano_kapenge|Pântano de Kapenge|pântano|Centro-Sul|-52800|34800|0|0|CANON|0
+pantano_palusfor|Pântano Palusfor|pântano|Nagdaar (NO)|-160800|-99200|0|0|CANON|0
+pantano_nadder|Pântano Nadder|pântano|Jord (Sul)|-164800|64800|0|0|GUIA|0
+deserto_yettus|Deserto Yettus|deserto|Yettus/Flerin|63200|74800|0|0|CANON|0
+koold|Koold|tundra-geleira|Koold|55200|-165200|0|0|CANON|0
+lago_ged|Lago Ged|lago|Jord (Sul)|-114800|72000|0|0|CANON|0
+lago_ois|Lago Ois|lago|Koold|83200|-142000|0|0|MAPA|0
+intersecao_rios|Interseção dos Rios|lago/confluência|Centro|0|0|0|0|CANON|0
+campos_malditos|Campos Malditos|campos|Veroogh/Flerin|23200|-31200|0|0|CANON|0
+campos_sussurrantes|Campos Sussurrantes|campos|Centro|-108800|26800|0|0|MAPA|0
+campos_verderinos|Campos Verderinos|campos|Jord (Sul)|-62800|54800|0|0|GUIA|0
+caverna_gelada|Caverna Gelada|caverna|Koold|19200|-125200|0|0|MAPA|0
+caverna_orme|Caverna Órme|caverna|Centro|-104800|-16400|0|0|MAPA|0
+caverna_fulys|Caverna Fulys|caverna|Mar Venstre|-256800|51600|0|0|MAPA|0
+caverna_frajorn|Caverna Frajorn|caverna|Mar Venstre|-236800|-159200|0|0|MAPA|0
+andens_spids|Andens Spids|cordilheira|Koold|-104800|-193200|0|0|MAPA|0
+porto_jord|Porto de Jord|vila-porto|Jord (Sul)|-48800|109200|500|500|TEXTO|0
+ilha_frajorn|Ilha da Caverna Frajorn (nome pendente)|ilha|Mar Venstre|-249600|-163600|0|0|MAPA|1

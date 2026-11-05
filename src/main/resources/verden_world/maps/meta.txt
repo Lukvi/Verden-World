@@ -1,0 +1,6 @@
+blocks_per_px=400
+origin_px_x=742
+origin_px_y=503
+width=1365
+height=1024
+sea_level=63
