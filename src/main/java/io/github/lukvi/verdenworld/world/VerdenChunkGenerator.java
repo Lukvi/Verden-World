@@ -5,6 +5,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.github.lukvi.verdenworld.VerdenWorldMod;
 import io.github.lukvi.verdenworld.core.Column;
 import io.github.lukvi.verdenworld.core.Location;
+import io.github.lukvi.verdenworld.core.Trees;
 import io.github.lukvi.verdenworld.core.VerdenTerrain;
 import java.util.HashMap;
 import java.util.List;
@@ -49,6 +50,14 @@ public class VerdenChunkGenerator extends ChunkGenerator {
         return states.computeIfAbsent(id, k -> Registries.BLOCK.get(Identifier.of(k)).getDefaultState());
     }
 
+    /** Folhas geradas fora de ordem precisam de persistent=true, senão decaem no primeiro tick aleatório. */
+    private BlockState treeState(String id) {
+        return states.computeIfAbsent(id, k -> {
+            BlockState s = Registries.BLOCK.get(Identifier.of(k)).getDefaultState();
+            return s.contains(net.minecraft.block.LeavesBlock.PERSISTENT) ? s.with(net.minecraft.block.LeavesBlock.PERSISTENT, true) : s;
+        });
+    }
+
     @Override
     public CompletableFuture<Chunk> populateNoise(Blender blender, NoiseConfig noiseConfig, StructureAccessor structureAccessor, Chunk chunk) {
         VerdenTerrain t = VerdenWorldMod.terrain();
@@ -66,6 +75,10 @@ public class VerdenChunkGenerator extends ChunkGenerator {
                 chunk.setBlockState(pos.set(x, y, z), state(id), false);
             }
         }
+        Trees.render(t, cp.getStartX(), cp.getStartZ(), cp.getEndX(), cp.getEndZ(), (x, y, z, id) -> {
+            pos.set(x, y, z);
+            if (chunk.getBlockState(pos).isAir()) chunk.setBlockState(pos, treeState(id), false);
+        });
         if (markers) placeMarkers(t, chunk, cp, col, pos);
         Heightmap.populateHeightmaps(chunk, java.util.EnumSet.of(Heightmap.Type.OCEAN_FLOOR_WG, Heightmap.Type.WORLD_SURFACE_WG));
         return CompletableFuture.completedFuture(chunk);

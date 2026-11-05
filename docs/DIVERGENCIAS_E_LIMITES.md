@@ -16,7 +16,8 @@ Hierarquia usada: Guia de Cartografia > livros > mapa colorido (posições) > pe
 Raios de platô das localidades; contornos de florestas/pântanos/campos (aproximações visuais dos mapas); vale de Veroogh; escolha de bioma Minecraft das ilhas; compressão vertical do relevo (picos ≤ ~315); dunas e ruído de relevo.
 
 ## Limites conhecidos
-- **Mod não compilado nem testado aqui** (hosts Maven/Fabric bloqueados). Pontos prováveis de ajuste de API: `carve`, `populateNoise`, `RegistryOps.getEntryLookupCodec`, `ServerPlayerEntity.teleport`, `Identifier.of`, versões em `gradle.properties`. O CI mostra os erros.
+- **Mod não compilado nem testado aqui** (hosts Maven/Fabric bloqueados). Pontos prováveis de ajuste de API: `carve`, `populateNoise`, `RegistryOps.getEntryLookupCodec`, `ServerPlayerEntity.teleport`, `Identifier.of`, `LeavesBlock.PERSISTENT`, versões em `gradle.properties`. O CI mostra os erros.
 - O núcleo Java (terreno) foi testado: determinismo, ordem de geração, localidades em terra, capitais planas e secas, ~0,73 ms/chunk.
-- Sem cavernas, sem mobs gerados, sem estruturas vanilla, sem vegetação/árvores (v0.1 só terreno, rios, lagos e biomas).
+- Árvores: carvalho, bétula, carvalho-escuro, abeto e selva, determinísticas por bioma (`core/Trees.java`, testada sem emendas entre chunks). Sem grama alta, flores, arbustos nem troncos grandes 2x2.
+- Sem cavernas, sem mobs gerados, sem estruturas vanilla.
 - Escala 400 blocos/px é provisória.

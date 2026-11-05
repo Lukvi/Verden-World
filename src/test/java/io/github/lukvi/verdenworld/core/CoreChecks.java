@@ -52,6 +52,26 @@ public class CoreChecks {
         t.sample(0, 0, c); check(c.lake && c.hasWater(), "Interseção dos Rios sem lago");
         t.sample(-300000, 0, c); check(c.sea && c.surface < 30, "oceano profundo ausente");
         t.sample(t.byId.get("andens_spids").x, t.byId.get("andens_spids").z, c); check(c.surface > 150, "Andens Spids baixo: " + c.surface);
+        // 8. árvores: determinísticas, sem emenda entre chunks, só onde faz sentido
+        {
+            int wx = -56800, wz = -9200; // dentro da Floresta Morke
+            java.util.Map<String, String> big = new java.util.TreeMap<>(), left = new java.util.TreeMap<>();
+            Trees.Sink sb = (x, y, z, id) -> big.putIfAbsent(x + "," + y + "," + z, id);
+            Trees.render(t, wx, wz, wx + 31, wz + 15, sb);
+            Trees.render(t, wx, wz, wx + 15, wz + 15, (x, y, z, id) -> left.putIfAbsent(x + "," + y + "," + z, id));
+            Trees.render(t, wx + 16, wz, wx + 31, wz + 15, (x, y, z, id) -> left.putIfAbsent(x + "," + y + "," + z, id));
+            check(big.equals(left), "árvores diferem entre janela única e dois chunks (emenda)");
+            int[] logs = {0};
+            Trees.render(t, wx, wz, wx + 255, wz + 255, (x, y, z, id) -> { if (id.endsWith("_log")) logs[0]++; });
+            check(logs[0] > 100, "Floresta Morke quase sem árvores: " + logs[0]);
+            int[] bad = {0};
+            Location jord = t.byId.get("jord");
+            Trees.render(t, jord.x - 300, jord.z - 300, jord.x + 300, jord.z + 300, (x, y, z, id) -> bad[0]++);
+            check(bad[0] == 0, "árvores no platô de Jord");
+            Trees.render(t, -300000, 0, -299800, 200, (x, y, z, id) -> bad[0]++);
+            Trees.render(t, t.byId.get("deserto_yettus").x, t.byId.get("deserto_yettus").z, t.byId.get("deserto_yettus").x + 200, t.byId.get("deserto_yettus").z + 200, (x, y, z, id) -> bad[0]++);
+            check(bad[0] == 0, "árvores no mar ou no deserto");
+        }
         // 7. desempenho: 16 chunks inteiros
         long t0 = System.nanoTime(); for (int cx = 0; cx < 4; cx++) for (int cz = 0; cz < 4; cz++) for (int x = 0; x < 16; x++) for (int z = 0; z < 16; z++) t.sample(cx * 16 + x, cz * 16 + z, c);
         double ms = (System.nanoTime() - t0) / 1e6 / 16; System.out.printf("~%.2f ms por chunk (amostragem de 256 colunas)%n", ms);

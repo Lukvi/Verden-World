@@ -2,7 +2,7 @@
 
 O continente de **Verden** em escala **1:1** para Minecraft (Fabric 1.21.1). Projeto independente: só o mundo, sem sistemas de RPG.
 
-**Versão 0.1 — validação geográfica.** Continente completo (relevo, oceanos, rios, lagos, biomas, regiões naturais) e as 58 localidades posicionadas, cada uma marcada por um obelisco provisório. Cidades ainda não construídas.
+**Versão 0.1 — validação geográfica.** Continente completo (relevo, oceanos, rios, lagos, biomas, árvores por bioma, regiões naturais) e as 58 localidades posicionadas, cada uma marcada por um obelisco provisório. Cidades ainda não construídas.
 
 ## Escala e coordenadas
 - 1 bloco = 1 m; 400 blocos por pixel do mapa colorido (provisório). Continente ≈ 345 × 300 km; mundo todo ≈ 546 × 410 km.
