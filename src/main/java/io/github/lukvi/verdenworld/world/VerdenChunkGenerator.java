@@ -79,6 +79,10 @@ public class VerdenChunkGenerator extends ChunkGenerator {
             pos.set(x, y, z);
             if (chunk.getBlockState(pos).isAir()) chunk.setBlockState(pos, treeState(id), false);
         });
+        io.github.lukvi.verdenworld.core.GroundCover.render(t, cp.getStartX(), cp.getStartZ(), cp.getEndX(), cp.getEndZ(), (x, y, z, id) -> {
+            pos.set(x, y, z);
+            if (chunk.getBlockState(pos).isAir()) chunk.setBlockState(pos, state(id), false);
+        });
         if (markers) placeMarkers(t, chunk, cp, col, pos);
         Heightmap.populateHeightmaps(chunk, java.util.EnumSet.of(Heightmap.Type.OCEAN_FLOOR_WG, Heightmap.Type.WORLD_SURFACE_WG));
         return CompletableFuture.completedFuture(chunk);

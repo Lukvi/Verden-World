@@ -18,6 +18,6 @@ Raios de platô das localidades; contornos de florestas/pântanos/campos (aproxi
 ## Limites conhecidos
 - **Mod não compilado nem testado aqui** (hosts Maven/Fabric bloqueados). Pontos prováveis de ajuste de API: `carve`, `populateNoise`, `RegistryOps.getEntryLookupCodec`, `ServerPlayerEntity.teleport`, `Identifier.of`, `LeavesBlock.PERSISTENT`, versões em `gradle.properties`. O CI mostra os erros.
 - O núcleo Java (terreno) foi testado: determinismo, ordem de geração, localidades em terra, capitais planas e secas, ~0,73 ms/chunk.
-- Árvores: carvalho, bétula, carvalho-escuro, abeto e selva, determinísticas por bioma (`core/Trees.java`, testada sem emendas entre chunks). Sem grama alta, flores, arbustos nem troncos grandes 2x2.
+- Árvores: carvalho, bétula, carvalho-escuro, abeto e selva, determinísticas por bioma (`core/Trees.java`, testada sem emendas entre chunks). Cobertura de chão por bioma (`core/GroundCover.java`: grama, samambaia, flores, arbusto seco). Sem troncos grandes 2x2 nem grama alta dupla.
 - Sem cavernas, sem mobs gerados, sem estruturas vanilla.
 - Escala 400 blocos/px é provisória.

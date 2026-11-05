@@ -72,6 +72,20 @@ public class CoreChecks {
             Trees.render(t, t.byId.get("deserto_yettus").x, t.byId.get("deserto_yettus").z, t.byId.get("deserto_yettus").x + 200, t.byId.get("deserto_yettus").z + 200, (x, y, z, id) -> bad[0]++);
             check(bad[0] == 0, "árvores no mar ou no deserto");
         }
+        // 9. cobertura de chão: determinística, sem emenda, só em terra seca
+        {
+            int mx = (int) ((680 - 742) * 400L), mz = (int) ((630 - 503) * 400L); // Campos Verderinos
+            java.util.Map<String, String> gc1 = new java.util.TreeMap<>(), gc2 = new java.util.TreeMap<>();
+            GroundCover.render(t, mx, mz, mx + 31, mz + 15, (x, y, z, id) -> gc1.put(x + "," + y + "," + z, id));
+            GroundCover.render(t, mx, mz, mx + 15, mz + 15, (x, y, z, id) -> gc2.put(x + "," + y + "," + z, id));
+            GroundCover.render(t, mx + 16, mz, mx + 31, mz + 15, (x, y, z, id) -> gc2.put(x + "," + y + "," + z, id));
+            check(gc1.equals(gc2), "cobertura de chão diferente entre janelas");
+            check(gc1.size() > 40, "poucas plantas nos Campos Verderinos: " + gc1.size());
+            int[] bad = {0};
+            GroundCover.render(t, -300000, 0, -299900, 100, (x, y, z, id) -> bad[0]++);
+            for (java.util.Map.Entry<String, String> e : gc1.entrySet()) { String[] q = e.getKey().split(","); t.sample(Integer.parseInt(q[0]), Integer.parseInt(q[2]), c); if (c.hasWater() || c.surface + 1 != Integer.parseInt(q[1])) bad[0]++; }
+            check(bad[0] == 0, "planta no mar, na água ou fora da superfície");
+        }
         // 7. desempenho: 16 chunks inteiros
         long t0 = System.nanoTime(); for (int cx = 0; cx < 4; cx++) for (int cz = 0; cz < 4; cz++) for (int x = 0; x < 16; x++) for (int z = 0; z < 16; z++) t.sample(cx * 16 + x, cz * 16 + z, c);
         double ms = (System.nanoTime() - t0) / 1e6 / 16; System.out.printf("~%.2f ms por chunk (amostragem de 256 colunas)%n", ms);
