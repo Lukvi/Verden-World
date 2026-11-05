@@ -12,7 +12,7 @@ O continente de **Verden** em escala **1:1** para Minecraft (Fabric 1.21.1). Pro
 ## Como testar (precisa ser feito por você: o mod não foi compilado nem rodado onde foi escrito)
 1. Obtenha o `.jar`: aba *Actions* do GitHub → build → artefato `verden-world-jar` (ou `gradle build` localmente com Java 21).
 2. Instale Minecraft **1.21.1**, Fabric Loader ≥ 0.16 e **Fabric API**. Coloque `verden-world-*.jar` e o Fabric API em `mods/`.
-3. *Criar novo mundo → Mais opções → Tipo de mundo: **Verden*** (também é o padrão "Normal"). Ative cheats.
+3. *Criar novo mundo → Mais opções → Tipo de mundo: clique no botão até aparecer **Verden**. Ative cheats.
 4. Você nasce em **Jord**. Comandos: `/verden list`, `/verden tp <id>` (ex.: `jord`, `nagdaar`, `flerin`, `veroogh`, `montainezz`), `/verden where`.
 5. Ao gerar áreas novas, espere: tudo é gerado sob demanda. F3 mostra o local mais próximo.
 - Opções JVM: `-Dverden.markers=false` (sem obeliscos), `-Dverden.pendingRivers=false` (sem os trechos de rio pendentes).
