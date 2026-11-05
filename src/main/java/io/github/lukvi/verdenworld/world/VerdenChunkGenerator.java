@@ -125,7 +125,7 @@ public class VerdenChunkGenerator extends ChunkGenerator {
     }
 
     @Override
-    public void appendDebugHudText(List<String> text, NoiseConfig noiseConfig, BlockPos pos) {
+    public void getDebugHudText(List<String> text, NoiseConfig noiseConfig, BlockPos pos) {
         VerdenTerrain t = VerdenWorldMod.terrain();
         Column c = t.sample(pos.getX(), pos.getZ());
         Location n = t.nearestLocation(pos.getX(), pos.getZ());
